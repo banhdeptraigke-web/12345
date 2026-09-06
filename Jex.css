@@ -1,0 +1,248 @@
+/* ==========================================================================
+   CSS BẢN: VP (V2)
+   Form Tím Pastel sang trọng - Tiêu đề Bảng Tím Than (Midnight Indigo) chuyên nghiệp
+   ========================================================================== */
+
+:root {
+  /* Nền trang */
+  --bg-page: #e2e8f0; 
+  
+  /* NỀN FORM: Tím Pastel (Giữ nguyên vì nó rất đẹp và nịnh mắt) */
+  --bg-form: #f5f3ff;
+  
+  /* Ô NHẬP LIỆU: Trắng tinh */
+  --bg-input: #ffffff;
+  --border-input: #ddd6fe; 
+  
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  
+  /* Nút mặc định / H1: Tím rực rỡ */
+  --btn-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --glow-primary: rgba(124, 58, 237, 0.35);
+  
+  /* ==========================================================
+     ĐIỂM NHẤN CỦA BẢN VP V2: TIÊU ĐỀ BẢNG MÀU TÍM THAN (MIDNIGHT INDIGO)
+     Tone trầm, điềm đạm, cực kỳ chuyên nghiệp, không bị chói hay "lố"
+     ========================================================== */
+  --table-header: linear-gradient(to right, #1e1b4b, #312e81);
+
+  /* Các nút chức năng (Đã fix hoàn hảo để không lặp màu) */
+  --btn-success: #10b981;   
+  --btn-warning: #f59e0b;   
+  --btn-danger:  #f43f5e;   
+  --btn-gray:    #64748b;   
+
+  --radius-lg: 16px;
+  --radius-md: 8px;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --transition: all 0.25s ease-in-out;
+}
+
+/* =========================================
+   1. RESET & BODY
+   ========================================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.6;
+  max-width: 100%; 
+  padding: 3rem 5%; 
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: #312e81; color: #fff; }
+
+/* =========================================
+   2. HEADER & LOGO
+   ========================================= */
+header { text-align: center; margin-bottom: 2.5rem; }
+header img { max-width: 100px; margin-bottom: 0.8rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); }
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  background: var(--btn-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p, header div { color: var(--text-muted); font-size: 0.95rem; }
+
+a { color: #6366f1; text-decoration: none; font-weight: 700; transition: var(--transition); }
+a:hover { color: #312e81; text-decoration: underline; }
+a:has(button) { display: inline-block; background: transparent !important; padding: 0 !important; box-shadow: none !important; margin: 0 !important; }
+
+hr { border: none; height: 1px; background: #cbd5e1; margin: 2rem 0; }
+
+/* =========================================
+   3. MAGIC FORMS (FORM CÓ MÀU PASTEL NỔI BẬT)
+   ========================================= */
+form {
+  background: var(--bg-form);
+  padding: 2.5rem 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.15);
+  border: 1px solid #ffffff; 
+  margin-bottom: 3.5rem;
+  
+  width: 100%;
+  max-width: 100%; 
+  margin-left: auto;
+  margin-right: auto;
+  display: block; 
+  
+  font-weight: 700; 
+  font-size: 0.85rem; 
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4f46e5; 
+}
+
+/* AI TỰ ĐỘNG BÓP KÍCH THƯỚC FORM */
+form:has(input:nth-of-type(3)), form:has(select), form:has(textarea) { max-width: 750px !important; }
+form:has(input[type="password"]) { max-width: 450px !important; padding: 3rem 2.5rem; }
+
+label { display: block; margin-bottom: 0.5rem; margin-top: 1.5rem; }
+form label:first-child { margin-top: 0; }
+
+form input:not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
+form select, 
+form textarea {
+  display: block;
+  width: 100%; 
+  padding: 0.95rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e293b;
+  
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-input); 
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+  
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: none;
+  letter-spacing: normal;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2);
+}
+
+/* =========================================
+   4. NÚT BẤM
+   ========================================= */
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 2.5rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #fff !important;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem; 
+  margin-right: 1rem; 
+  margin-bottom: 0.5rem;
+}
+
+button:hover, input[type="submit"]:hover { 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.3);
+}
+
+/* NÚT MẶC ĐỊNH LÀ TÍM RỰC RỠ */
+button, input[type="submit"], input[type="button"] {
+  background: var(--btn-primary);
+  box-shadow: 0 4px 15px var(--glow-primary);
+}
+
+/* NÚT ĐỨNG SAU LÀ XÁM BẠC */
+button ~ button, 
+input[type="submit"] ~ button,
+input[type="submit"] ~ a button,
+button ~ a button,
+a:has(button) ~ a:has(button) button {
+  background: var(--btn-gray) !important;
+  box-shadow: 0 4px 10px rgba(100, 116, 139, 0.3) !important;
+}
+
+button[name*="add" i], button[value*="tạo" i] { background: var(--btn-success) !important; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;}
+button[name*="edit" i], button[value*="sửa" i] { background: var(--btn-warning) !important; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3) !important;}
+button[name*="delete" i], button[value*="xóa" i] { background: var(--btn-danger) !important; box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3) !important;}
+button[name*="back" i], button[value*="back" i], input[type="reset"] { background: var(--btn-gray) !important; box-shadow: 0 4px 10px rgba(100, 116, 139, 0.3) !important;}
+
+/* =========================================
+   5. BẢNG DỮ LIỆU - BẢN VP
+   ========================================= */
+table {
+  width: 100%;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  border-collapse: separate; 
+  border-spacing: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+}
+
+th, td {
+  padding: 1.2rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: 1px solid #f1f5f9; 
+}
+th:last-child, td:last-child { border-right: none; }
+tr:last-child td { border-bottom: none; }
+
+/* TIÊU ĐỀ BẢNG: TÍM THAN (MIDNIGHT INDIGO) TUYỆT ĐẸP */
+th {
+  background: var(--table-header);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: left;
+  border-right: 1px solid rgba(255, 255, 255, 0.1); 
+  border-bottom: none;
+}
+
+td { color: #1e293b; font-size: 0.95rem; font-weight: 500; }
+
+tbody tr:nth-of-type(even) { background-color: #f8fafc; }
+
+/* Hover vào dòng dữ liệu cũng đổi sang ánh Tím nhẹ để tone-sur-tone với tiêu đề */
+tbody tr:hover { background-color: #f5f3ff; }
+tbody tr:hover td { color: #4f46e5; }
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+body > p:last-of-type, footer { 
+  text-align: center; 
+  color: #94a3b8; 
+  padding-top: 2rem; 
+  border-top: 1px dashed #cbd5e1; 
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}

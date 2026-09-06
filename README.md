@@ -2,8 +2,6 @@
 
 A beautiful, modern, and plug-and-play classless CSS framework. Just link it, and your raw HTML turns into a million-dollar SaaS dashboard instantly. No classes needed.
 
-**👀 Live Demo:** [Click here to see Jex CSS in action](https://banhdeptraigke-web.github.io/12345/)
-
 ## ✨ Quick Start
 
 You don't need to download anything. Just add this single line of code inside the `<head>` tag of your HTML file:

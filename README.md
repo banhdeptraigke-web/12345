@@ -5,10 +5,11 @@ A beautiful, modern, and plug-and-play classless CSS framework. Just link it, an
 ## ✨ Quick Start
 
 **👀 Live Demo:** [Click here to see Jex CSS in action](https://banhdeptraigke-web.github.io/12345/)
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/banhdeptraigke-web/12345/Jex.css">
 
 You don't need to download anything. Just add this single line of code inside the `<head>` tag of your HTML file:
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/banhdeptraigke-web/12345/Jex.css">
+
 🚀 Key Features
 AI Adaptive Layouts: The form automatically resizes based on its content (e.g., Login forms shrink to 450px, Add forms to 750px, Search forms go full-width 100%).
 

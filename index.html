@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jex CSS - The Intelligent Classless Framework</title>
+    
+    <!-- Link CDN chính thức để khách hàng copy trực tiếp -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/banhdeptraigke-web/12345/Jex.css">
+</head>
+<body>
+
+    <!-- ================= HEADER & HƯỚNG DẪN SỬ DỤNG ================= -->
+    <header>
+        <h1>JEX CSS FRAMEWORK</h1>
+        <p>A beautiful, modern, and plug-and-play classless CSS framework.</p>
+        
+        <!-- Hộp hướng dẫn copy code cho khách -->
+        <div style="background: #ffffff; padding: 1rem; border-radius: 8px; border: 1px solid #ddd6fe; margin-top: 1rem; display: inline-block; text-align: left;">
+            <strong style="color: #4f46e5; font-size: 0.85rem; text-transform: uppercase;">🚀 Quick Start: Drop this into your HTML</strong><br>
+            <code style="color: #e11d48; font-size: 0.9rem; background: #f8fafc; padding: 4px 8px; border-radius: 4px;">
+                &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/banhdeptraigke-web/12345/Jex.css"&gt;
+            </code>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- ================= SEARCH FORM (Auto 100% Width) ================= -->
+    <form action="#">
+        <input type="text" placeholder="Search by tracking ID, customer name, or email..." required>
+        <button type="submit" name="search">Search</button>
+    </form>
+
+    <!-- ================= LOGIN FORM (Auto shrinks to 450px) ================= -->
+    <form action="#">
+        <label>Username:</label>
+        <input type="text" value="admin_global" required>
+        
+        <label>Password:</label>
+        <input type="password" value="••••••••" required>
+        
+        <button type="submit" name="login">Sign In</button>
+    </form>
+
+    <!-- ================= ADD NEW FORM (Auto shrinks to 750px) ================= -->
+    <form action="#">
+        <label>Customer Name:</label>
+        <input type="text" placeholder="e.g., John Doe">
+
+        <label>Phone Number:</label>
+        <input type="text" placeholder="e.g., +1 234 567 8900">
+
+        <label>Estimated Delivery:</label>
+        <input type="date">
+
+        <label>Order Status:</label>
+        <select>
+            <option>Processing</option>
+            <option>In Transit</option>
+            <option>Delivered</option>
+            <option>Cancelled</option>
+        </select>
+
+        <label>Quantity:</label>
+        <input type="number" value="1">
+
+        <button type="submit" name="add">Create Order</button> 
+        <a href="#"><button type="button" name="back">Cancel</button></a>
+    </form>
+
+    <!-- ================= DATA TABLE ================= -->
+    <table>
+        <thead>
+            <tr>
+                <th>Tracking ID</th>
+                <th>Customer Name</th>
+                <th>Phone</th>
+                <th>Destination</th>
+                <th>Est. Delivery</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TRK-1788586898</td>
+                <td>Alice Smith</td>
+                <td>+1 555-0198</td>
+                <td>New York, NY</td>
+                <td>2026-09-29</td>
+                <td>
+                    <a href="#">Edit</a> | <a href="#" style="color: #f43f5e;">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>TRK-1788586947</td>
+                <td>Robert Johnson</td>
+                <td>+1 555-0247</td>
+                <td>Los Angeles, CA</td>
+                <td>2026-10-06</td>
+                <td>
+                    <a href="#">Edit</a> | <a href="#" style="color: #f43f5e;">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ================= FOOTER ================= -->
+    <p>Powered by Jex CSS Framework - 100% Classless</p>
+
+</body>
+</html>

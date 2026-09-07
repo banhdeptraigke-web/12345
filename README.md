@@ -1,11 +1,12 @@
 # 🌊 Jex CSS - The Intelligent Classless Framework
 
 A beautiful, modern, and plug-and-play classless CSS framework. Just link it, and your raw HTML turns into a million-dollar SaaS dashboard instantly. No classes needed.
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/banhdeptraigke-web/12345/Jex.css">
 
 ## ✨ Quick Start
 
 **👀 Live Demo:** [Click here to see Jex CSS in action](https://banhdeptraigke-web.github.io/12345/)
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/banhdeptraigke-web/12345/Jex.css">
+
 
 You don't need to download anything. Just add this single line of code inside the `<head>` tag of your HTML file:
 
